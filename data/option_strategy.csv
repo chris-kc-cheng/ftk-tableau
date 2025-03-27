@@ -1,0 +1,35 @@
+﻿Strategy,Instrument,Type,Strike,Quantity
+Covered Call,Long Stock,Stock,1,1
+Covered Call,Short 60 Call,Call,60,-1
+Protective Put,Long Stock,Stock,1,1
+Protective Put,Long 40 Put,Put,40,1
+Collar,Long Stock,Stock,1,1
+Collar,Long 40 Put,Put,40,1
+Collar,Short 60 Call,Call,60,-1
+Bull Call Spread,Long 40 Call,Call,40,1
+Bull Call Spread,Short 60 Call,Call,60,-1
+Bull Put Spread,Long 40 Put,Put,40,1
+Bull Put Spread,Short 60 Put,Put,60,-1
+Bear Put Spread,Long 60 Put,Put,60,1
+Bear Put Spread,Short 40 Put,Put,40,-1
+Box Spread,Long ITM Call,Call,40,1
+Box Spread,Short OTM Call,Call,60,-1
+Box Spread,Long ITM Put,Put,60,1
+Box Spread,Short OTM Putt,Put,40,-1
+Long Straddle,Long 50 Call,Call,50,1
+Long Straddle,Long 50 Put,Put,50,1
+Short Straddle,Short 50 Call,Call,50,-1
+Short Straddle,Short 50 Put,Put,50,-1
+Strangle,Long 40 Call,Call,40,1
+Strangle,Long 60 Put,Put,60,1
+Iron Butterfly,Long 25 Call,Call,25,1
+Iron Butterfly,Short 50 Call,Call,50,-2
+Iron Butterfly,Long 75 Call,Call,75,1
+Iron Condor,Long 20 Call,Call,20,1
+Iron Condor,Short 40 Call,Call,40,-1
+Iron Condor,Short 60 Call,Call,60,-1
+Iron Condor,Long 80 Call,Call,80,1
+Put Call Parity,Long Stock,Stock,1,1
+Put Call Parity,Long 50 Put,Put,50,1
+Put Call Parity,Short 50 Call,Call,50,-1
+Put Call Parity,Short Risk-free asset,Debt,50,-1

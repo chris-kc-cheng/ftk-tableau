@@ -1,0 +1,484 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <RelationshipCalculations />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='option_strategy+' inline='true' name='federated.1hxg6rj1rpo5ju160bkbl161tvph' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='option_strategy' name='textscan.1rwfq5b0epsy7w1c62gkh017f4e9'>
+            <connection class='textscan' directory='C:/Users/kc111/Dev/ftk-tableau/data' filename='option_strategy.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.1rwfq5b0epsy7w1c62gkh017f4e9' name='option_strategy.csv' table='[option_strategy#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Strategy' ordinal='0' />
+              <column datatype='string' name='Instrument' ordinal='1' />
+              <column datatype='string' name='Type' ordinal='2' />
+              <column datatype='integer' name='Strike' ordinal='3' />
+              <column datatype='integer' name='Quantity' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1rwfq5b0epsy7w1c62gkh017f4e9' name='spot.csv' table='[spot#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US'>
+              <column datatype='integer' name='Spot' ordinal='0' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[option_strategy.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[spot.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Strategy</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Strategy]</local-name>
+            <parent-name>[option_strategy.csv]</parent-name>
+            <remote-alias>Strategy</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[option_strategy.csv_10E01E0661E6459B9EA94636DD53CD90]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Instrument</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Instrument]</local-name>
+            <parent-name>[option_strategy.csv]</parent-name>
+            <remote-alias>Instrument</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[option_strategy.csv_10E01E0661E6459B9EA94636DD53CD90]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type]</local-name>
+            <parent-name>[option_strategy.csv]</parent-name>
+            <remote-alias>Type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[option_strategy.csv_10E01E0661E6459B9EA94636DD53CD90]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Strike</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Strike]</local-name>
+            <parent-name>[option_strategy.csv]</parent-name>
+            <remote-alias>Strike</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[option_strategy.csv_10E01E0661E6459B9EA94636DD53CD90]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[option_strategy.csv]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[option_strategy.csv_10E01E0661E6459B9EA94636DD53CD90]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Spot</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Spot]</local-name>
+            <parent-name>[spot.csv]</parent-name>
+            <remote-alias>Spot</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[spot.csv_33F8D5631FA84C559D832C742568600B]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Value' datatype='integer' name='[Calculation_297519111411965967]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Spot] * EXP()&#13;&#10;[Strike]' />
+      </column>
+      <column caption='option_strategy.csv' datatype='table' name='[__tableau_internal_object_id__].[option_strategy.csv_10E01E0661E6459B9EA94636DD53CD90]' role='measure' type='quantitative' />
+      <column caption='spot.csv' datatype='table' name='[__tableau_internal_object_id__].[spot.csv_33F8D5631FA84C559D832C742568600B]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/kc111/AppData/Local/Temp/TableauTemp/#TableauTemp_18uk0e712h4kji12ic3ay1osu25o.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/26/2025 01:32:58 AM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='option_strategy.csv_10E01E0661E6459B9EA94636DD53CD90' table='[Extract].[option_strategy.csv_10E01E0661E6459B9EA94636DD53CD90]' type='table' />
+            <relation name='spot.csv_33F8D5631FA84C559D832C742568600B' table='[Extract].[spot.csv_33F8D5631FA84C559D832C742568600B]' type='table' />
+          </relation>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Strategy</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Strategy]</local-name>
+              <parent-name>[option_strategy.csv_10E01E0661E6459B9EA94636DD53CD90]</parent-name>
+              <remote-alias>Strategy</remote-alias>
+              <ordinal>0</ordinal>
+              <family>option_strategy.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[option_strategy.csv_10E01E0661E6459B9EA94636DD53CD90]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Instrument</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Instrument]</local-name>
+              <parent-name>[option_strategy.csv_10E01E0661E6459B9EA94636DD53CD90]</parent-name>
+              <remote-alias>Instrument</remote-alias>
+              <ordinal>1</ordinal>
+              <family>option_strategy.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[option_strategy.csv_10E01E0661E6459B9EA94636DD53CD90]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Type]</local-name>
+              <parent-name>[option_strategy.csv_10E01E0661E6459B9EA94636DD53CD90]</parent-name>
+              <remote-alias>Type</remote-alias>
+              <ordinal>2</ordinal>
+              <family>option_strategy.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[option_strategy.csv_10E01E0661E6459B9EA94636DD53CD90]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Strike</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Strike]</local-name>
+              <parent-name>[option_strategy.csv_10E01E0661E6459B9EA94636DD53CD90]</parent-name>
+              <remote-alias>Strike</remote-alias>
+              <ordinal>3</ordinal>
+              <family>option_strategy.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[option_strategy.csv_10E01E0661E6459B9EA94636DD53CD90]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quantity</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Quantity]</local-name>
+              <parent-name>[option_strategy.csv_10E01E0661E6459B9EA94636DD53CD90]</parent-name>
+              <remote-alias>Quantity</remote-alias>
+              <ordinal>4</ordinal>
+              <family>option_strategy.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[option_strategy.csv_10E01E0661E6459B9EA94636DD53CD90]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Spot</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Spot]</local-name>
+              <parent-name>[spot.csv_33F8D5631FA84C559D832C742568600B]</parent-name>
+              <remote-alias>Spot</remote-alias>
+              <ordinal>5</ordinal>
+              <family>spot.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>121</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[spot.csv_33F8D5631FA84C559D832C742568600B]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='option_strategy.csv' id='option_strategy.csv_10E01E0661E6459B9EA94636DD53CD90'>
+            <properties context=''>
+              <relation connection='textscan.1rwfq5b0epsy7w1c62gkh017f4e9' name='option_strategy.csv' table='[option_strategy#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Strategy' ordinal='0' />
+                  <column datatype='string' name='Instrument' ordinal='1' />
+                  <column datatype='string' name='Type' ordinal='2' />
+                  <column datatype='integer' name='Strike' ordinal='3' />
+                  <column datatype='integer' name='Quantity' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='option_strategy.csv_10E01E0661E6459B9EA94636DD53CD90' table='[Extract].[option_strategy.csv_10E01E0661E6459B9EA94636DD53CD90]' type='table' />
+            </properties>
+          </object>
+          <object caption='spot.csv' id='spot.csv_33F8D5631FA84C559D832C742568600B'>
+            <properties context=''>
+              <relation connection='textscan.1rwfq5b0epsy7w1c62gkh017f4e9' name='spot.csv' table='[spot#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US'>
+                  <column datatype='integer' name='Spot' ordinal='0' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='spot.csv_33F8D5631FA84C559D832C742568600B' table='[Extract].[spot.csv_33F8D5631FA84C559D832C742568600B]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='1' />
+              <expression op='1' />
+            </expression>
+            <first-end-point object-id='option_strategy.csv_10E01E0661E6459B9EA94636DD53CD90' />
+            <second-end-point object-id='spot.csv_33F8D5631FA84C559D832C742568600B' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Dividend Yield' datatype='real' default-format='p0.0%' name='[Parameter 1]' param-domain-type='range' role='measure' type='quantitative' value='0.01'>
+        <calculation class='tableau' formula='0.01' />
+        <range granularity='0.001' max='0.1' min='0.0' />
+      </column>
+      <column caption='Risk-free rate' datatype='real' default-format='p0.0%' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='0.03'>
+        <calculation class='tableau' formula='0.03' />
+        <range granularity='0.001' max='0.25' min='0.0' />
+      </column>
+      <column caption='Volatility' datatype='real' default-format='p0.0%' name='[Parameter 3]' param-domain-type='range' role='measure' type='quantitative' value='0.2'>
+        <calculation class='tableau' formula='0.2' />
+        <range granularity='0.001' max='1.0' min='0.0' />
+      </column>
+      <column caption='Time to maturity' datatype='real' default-format='n#,##0.00;-#,##0.00' name='[Parameter 4]' param-domain-type='range' role='measure' type='quantitative' value='0.25'>
+        <calculation class='tableau' formula='0.25' />
+        <range granularity='0.01' max='10.0' min='0.0' />
+      </column>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='option_strategy+' name='federated.1hxg6rj1rpo5ju160bkbl161tvph' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hxg6rj1rpo5ju160bkbl161tvph'>
+            <column caption='Value' datatype='integer' name='[Calculation_297519111411965967]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Spot] * EXP()&#13;&#10;[Strike]' />
+            </column>
+            <column datatype='string' name='[Instrument]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Spot]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Strategy]' role='dimension' type='nominal' />
+            <column-instance column='[Instrument]' derivation='None' name='[none:Instrument:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Spot]' derivation='None' name='[none:Spot:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Strategy]' derivation='None' name='[none:Strategy:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_297519111411965967]' derivation='Sum' name='[sum:Calculation_297519111411965967:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1hxg6rj1rpo5ju160bkbl161tvph].[none:Strategy:nk]'>
+            <groupfilter function='member' level='[none:Strategy:nk]' member='&quot;Short Straddle&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1hxg6rj1rpo5ju160bkbl161tvph].[none:Strategy:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1hxg6rj1rpo5ju160bkbl161tvph].[none:Instrument:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1hxg6rj1rpo5ju160bkbl161tvph].[sum:Calculation_297519111411965967:qk]</rows>
+        <cols>[federated.1hxg6rj1rpo5ju160bkbl161tvph].[none:Spot:qk]</cols>
+      </table>
+      <simple-id uuid='{EAB67BF9-8FFA-494B-9AC3-1C4A85818F28}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='radiolist' param='[federated.1hxg6rj1rpo5ju160bkbl161tvph].[none:Strategy:nk]' show-all='false' type='filter' />
+            <card pane-specification-id='3' param='[federated.1hxg6rj1rpo5ju160bkbl161tvph].[none:Instrument:nk]' type='color' />
+            <card mode='slider' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card mode='slider' param='[Parameters].[Parameter 2]' type='parameter' />
+            <card mode='slider' param='[Parameters].[Parameter 3]' type='parameter' />
+            <card mode='slider' param='[Parameters].[Parameter 4]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1hxg6rj1rpo5ju160bkbl161tvph].[none:Instrument:nk]</field>
+            <field>[federated.1hxg6rj1rpo5ju160bkbl161tvph].[none:Strategy:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9BF277B0-6E85-4DC6-A95B-B01D55BB86EE}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+      E4C09h/SbzXNtGpz6QAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
